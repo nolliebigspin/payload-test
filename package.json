@@ -26,9 +26,8 @@
     "test:int": "cross-env NODE_OPTIONS=--no-deprecation vitest run --config ./vitest.config.mts",
     "check:lint": "biome lint --write ./",
     "check:format": "biome format --write ./",
-    "check:imports": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true --write ./",
     "check:ts": "tsc --noEmit",
-    "check:all": "pnpm check:imports && pnpm check:format && pnpm check:lint && pnpm check:ts"
+    "check:all": "pnpm check:format && pnpm check:lint && pnpm check:ts"
   },
   "dependencies": {
     "@payloadcms/admin-bar": "3.50.0",
